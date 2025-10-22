@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/nate/.cache/nvim/packer_hererocks/2.1.1706185428/share/lua/5.1/?.lua;/home/nate/.cache/nvim/packer_hererocks/2.1.1706185428/share/lua/5.1/?/init.lua;/home/nate/.cache/nvim/packer_hererocks/2.1.1706185428/lib/luarocks/rocks-5.1/?.lua;/home/nate/.cache/nvim/packer_hererocks/2.1.1706185428/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/nate/.cache/nvim/packer_hererocks/2.1.1706185428/lib/lua/5.1/?.so"
+local package_path_str = "/home/nate/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/nate/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/nate/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/nate/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/nate/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/nate/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["lsp-zero.nvim"] = {
-    loaded = true,
-    path = "/home/nate/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/nate/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -117,7 +112,7 @@ _G.packer_plugins = {
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/nate/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+    url = "https://github.com/mason-org/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
@@ -133,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nate/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/nate/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -159,11 +159,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nate/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["swenv.nvim"] = {
-    loaded = true,
-    path = "/home/nate/.local/share/nvim/site/pack/packer/start/swenv.nvim",
-    url = "https://github.com/AckslD/swenv.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
