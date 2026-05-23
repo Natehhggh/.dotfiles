@@ -61,7 +61,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><left>")
 
 -- build and run
-vim.keymap.set("n", "<F5>", ":term ./build.sh && ./game")
+vim.keymap.set("n", "<F5>", ":term ./build.sh && ./game.out")
 
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
@@ -74,6 +74,6 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 --vim.keymap.set("t", "<C-j>", "<cmd>wincmd j<CR>")
 --vim.keymap.set("t", "<C-k>", "<cmd>wincmd k<CR>")
 --vim.keymap.set("t", "<C-l>", "<cmd>wincmd l<CR>")
-
+--
 vim.keymap.set("n", "<TAB>", ":bn<CR>")
 vim.keymap.set("n", "<S-TAB>", ":bp<CR>")
